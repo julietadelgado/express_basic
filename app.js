@@ -6,7 +6,7 @@ const res = require('express/lib/response')
 const app = express()
 
 // Port in wich we are going to see our app: localhost:3000
-const port = 300
+const port = 3000
 
 // Initial path, this path will respond to the url localhost:300
 app.get('/', (request, response) => {
