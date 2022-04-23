@@ -23,7 +23,6 @@ app.get('/explorer', (req, res) => {
 })
 
 // Query Params
-
 app.get('/explorer/:explorerName', (req, res) => {
     res.send(req.params)
 })
