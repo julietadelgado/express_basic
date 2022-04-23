@@ -22,6 +22,12 @@ app.get('/explorer', (req, res) => {
     res.send({name: "Julieta", msg: "Hello everybody"})
 })
 
+// Query Params
+
+app.get('/explorer/:explorerName', (req, res) => {
+    res.send(req.params)
+})
+
 // Inititalize app
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
