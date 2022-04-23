@@ -13,6 +13,15 @@ app.get('/', (request, response) => {
     response.send('Hello world')
 })
 
+app.get('/launchx', (req, res) => {
+    res.send('Welcome to LaunchX')
+})
+
+// Send object
+app.get('/explorer', (req, res) => {
+    res.send({name: "Julieta", msg: "Hello everybody"})
+})
+
 // Inititalize app
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
